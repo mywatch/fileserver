@@ -1,0 +1,15 @@
+server:
+    port: 8080
+
+file:
+    storage:
+        location: fileStorage
+
+spring:
+    servlet:
+        multipart:
+            enabled: true
+            location: intermediateTemp
+            file-size-threshold: 5MB
+            max-file-size: 5MB
+            max-request-size: 15MB
